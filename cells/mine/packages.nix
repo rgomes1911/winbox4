@@ -16,7 +16,7 @@ in rec {
   winbox = nixpkgs.stdenv.mkDerivation rec {
     name = "winbox";
     pname = name;
-    version = "4.0beta23";
+    version = "4.0beta9";
     buildInputs = with nixpkgs; [
       fontconfig
       freetype
