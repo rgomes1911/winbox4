@@ -16,7 +16,7 @@ in rec {
   winbox = nixpkgs.stdenv.mkDerivation rec {
     name = "winbox";
     pname = name;
-    version = "4.0beta9";
+    version = "4.0beta23";
     buildInputs = with nixpkgs; [
       fontconfig
       freetype
@@ -34,7 +34,7 @@ in rec {
       copyDesktopItems
     ];
     src = nixpkgs.fetchzip {
-      sha256 = "sha256-8Z2AJLUwrfOtBV+ZxlKlWoT1w/FK4KJSWwY4+PcT2Xk=";
+      sha256 = "sha256-pO/DJ6W+W8EhB5gAYFYf/HXe07kQdhi56AMmSKfNRIM=";
       stripRoot = false;
       url = "https://download.mikrotik.com/routeros/winbox/${version}/WinBox_Linux.zip";
     };
